@@ -3,7 +3,7 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "shader-lesson-1.4/Shader.h"
+#include "Shader.h"
 
 void framebufferResizeCallback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -40,8 +40,8 @@ int main() {
 	}
 
 	// initialize vertex and fragment shaders
-	Shader shader("shader-lesson-1.4/les1.4-vShader.vs",
-		"shader-lesson-1.4/les1.4-fShader.fs");
+	Shader shader("shader-lesson-1.4/les1.4-vShader.vert",
+		"shader-lesson-1.4/les1.4-fShader.frag");
 
 	// positions and colors
 	float vertices[] = {
